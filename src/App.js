@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import PlayerSearch from './Elements/PlayerSearch'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render () {
+    return (
+      <div>
+        <h1 className="heading">NBA React Exercise</h1>
+        <hr />
+        <div className="row">
+          <div className="col-lg-6 center">
+            <PlayerSearch />
+          </div>
+        </div>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App

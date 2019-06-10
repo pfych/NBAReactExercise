@@ -11,3 +11,74 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.padding {
+  padding: 25px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.playerCard {
+  padding: 5px;
+  border: black 1px solid;
+  margin: 5px;
+  height: auto;
+  width: auto;
+}
+
+.stats {
+  height: 100%;
+}
+
+.playerName {
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+
+.playerTeam {
+  font-weight: lighter;
+  text-align: center;
+  padding-bottom: 3px;
+  border-bottom: black 1px solid;
+}
+
+.search {
+  width: 100%;
+  margin: 5px;
+}
+
+.center {
+  float: none;
+  margin: 0 auto;
+}
+
+.lightText {
+  font-weight: lighter;
+}
+
+.table td.fit,
+.table th.fit {
+  white-space: nowrap;
+  width: 1%;
+}
+
+.loading {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.loaded {
+  animation: 1s fadeIn linear;
+}
